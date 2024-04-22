@@ -7,17 +7,22 @@
 @author         CorgiBlu
 @preprocessor   stylus
 ==/UserStyle== */
-@-moz-document domain("legacy.curseforge.com/") {
+@-moz-document regexp("https?:\\/\\/legacy\\.curseforge\\.com.*") {
     .container {
         --main-bg-color: cornflowerblue;
         --bg-color: #481248;
     }
-    /*body {
-        div:nth-child(3) {
-            background-color: main-bg-color;
-        }
-    }*/
-    .root-content {
-        background-color: var(--main-bg-color) !important ;
+    /* 
+        little tiny things 
+        notification module background
+    */
+    .bg-white {
+        //background-color: var(--bg-color);
     }
+    /* /account/subscriptions background */
+/*.box, .ui-dialog, .listing-container:not(.custom-formatting) .alert.no-results, .project-list-bubble-item, .u-dropDown:hover .u-dropDownMenu, .spoiler, body[class*="body-user-my"] .listing-user .user-list-item, body[class*="body-user-my"] .listing-user-profile .user-list-item, .body-user-followers .listing-user .user-list-item, .body-user-followers .listing-user-profile .user-list-item, .e-settings-container, .body-publicprojectsettings-members .field-errors, .body-publicprojectsettings-filedefaultrelations .field-errors, .body-publicprojectsettings-clientmatchexclusions span.field-errors:not(#field-path-error) {
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0,0,0,.06);
+	background-color: #17141b;
+	border-color: #232323;
+}*/
 }

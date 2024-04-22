@@ -1,0 +1,1 @@
+Made for Stylus and ScriptMonkey for Firefox

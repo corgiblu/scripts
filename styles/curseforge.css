@@ -1,0 +1,23 @@
+/* ==UserStyle==
+@name           Dark Legacy Curseforge
+@namespace      github.com/corgiblu/scripts
+@homepageURL	github.com/corgiblu/scripts
+@version        0.0.1
+@description    A simple darkmode for the legacy curseforge
+@author         CorgiBlu
+@preprocessor   stylus
+==/UserStyle== */
+@-moz-document domain("legacy.curseforge.com/") {
+    .container {
+        --main-bg-color: cornflowerblue;
+        --bg-color: #481248;
+    }
+    /*body {
+        div:nth-child(3) {
+            background-color: main-bg-color;
+        }
+    }*/
+    .root-content {
+        background-color: var(--main-bg-color) !important ;
+    }
+}
